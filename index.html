@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="media/svg/wand-sparkles.svg">
+	<title>StatCrak</title>
+	<meta name="description" content="Stat tracking portal for gaming.">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header-container">
+				<a href="index.html" class="logo"><img src="media/svg/wand-sparkles.svg" alt="Wand with sparkles icon">StatCrak</a>
+				<a href="" id="menu-icon" class="menu-icon"><img src="media/svg/bars.svg" alt="Menu bars icon"></a>
+				<a href="" id="x-nav-icon" class="menu-icon"><img src="media/svg/xmark.svg" alt="Close menu icon"></a>
+			</div>
+			<nav id="nav">
+				<hr>
+				<img class="nav-svg" src="media/svg/nav-ill.svg" alt="Navigation illustration">
+				<ul class="nav-list">
+					<li>
+						<a href="#"><img class="nav-icon-svg" src="media/svg/signup-nav-icon.svg" alt="Sign up icon">Sign Up</a>
+					</li>
+					<li>
+						<a href="#how-it-works"><img class="nav-icon-svg-2" src="media/svg/questionmark.svg" alt="Question mark icon">How It Works</a>
+					</li>
+					<li>
+						<a href="https://github.com/digitalherding/StatCrak" target="_blank"><img class="nav-icon-svg-2" src="media/svg/wrench.svg" alt="Wrench icon">Updates</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="section-intro">
+				<img src="media/svg/face-dizzy.svg" alt="Dizzy face icon">
+				<h1><span>Oh, sweet, sweet</span>statistics...</h1>
+				<img src="media/img/banner-gfx-lockup-cs2.webp" alt="A statistics illustration on a computer screen">
+			</section>
+			<section class="section-login">
+				<h2><img class="heading-icon-1" src="media/svg/heading-icon-1.svg" alt="Heading icon">Login / Sign Up</h2>
+				<form action="authenticate.php" method="post">
+					<label for="username">
+						<img src="media/svg/user.svg" alt="User icon">
+					</label>
+					<input type="username" name="username" id="username" placeholder="Enter username" autocomplete="username" title="Please enter your username here." required>
+					<label for="password">
+						<img src="media/svg/lock.svg" alt="Lock icon">
+					</label>
+					<input type="password" name="password" id="password" placeholder="Enter password" autocomplete="off" title="Please enter your password here." required>
+					<button class="login-btn" type="submit">Login</button>
+					<a href="#" class="btn-signup" type="submit">Sign&nbsp;Up</a>
+				</form>
+			</section>
+			<section class="section-how-it-works" id="how-it-works">
+				<h2><img src="media/svg/heading-icon-2.svg" alt="Heading icon">How It Works</h2>
+				<div class="step-wrapper">
+					<div class="step-card">
+						<div class="step-card-container">
+							<img src="media/svg/step-1-circle.svg" alt="Step 1 circle icon">
+							<div class="step-copy-wrapper">
+								<h3>First, sign up or log into your account.</h3>
+								<button class="step-link" onclick="stepOneLinkIconSwap()">
+									<img src="media/svg/grad-hat.svg" alt="Graduation hat icon">Learn How<img class="plus-icon" src="media/svg/plus.svg" alt="Plus to expand icon"><img class="minus-icon" src="media/svg/minus.svg" alt="Minus to close icon">
+								</button>
+							</div>
+							<img src="media/svg/step-1-ill.svg" alt="Step 1 illustration">
+						</div>
+						<div class="step-card-expanded-container">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ornare ex, eu volutpat quam. Vestibulum pharetra, sapien et ultricies auctor, ligula odio varius velit, ac dignissim sem quam et est. Morbi egestas sit amet nibh eget ullamcorper. Vestibulum blandit convallis eros non ornare. Praesent sollicitudin pulvinar nunc, sit amet convallis erat iaculis in. Integer eu nunc felis.</p>
+						</div>
+						<img src="media/svg/step-card-curve.svg" alt="Curved graphical element" class="curved-svg">
+					</div>
+					<div class="step-card">
+						<div class="step-card-container">
+							<img src="media/svg/step-2-circle.svg" alt="Step 1 circle icon">
+							<div class="step-copy-wrapper">
+								<h3>Link the gaming platform of your choice.</h3>
+								<button class="step-link" onclick="stepTwoLinkIconSwap()">
+									<img src="media/svg/grad-hat.svg" alt="Graduation hat icon">Learn How<img class="plus-icon" src="media/svg/plus.svg" alt="Plus to expand icon"><img class="minus-icon" src="media/svg/minus.svg" alt="Minus to close icon">
+								</button>
+							</div>
+							<img src="media/svg/step-2-ill.svg" alt="Step 1 illustration">
+						</div>
+						<div class="step-card-expanded-container">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ornare ex, eu volutpat quam. Vestibulum pharetra, sapien et ultricies auctor, ligula odio varius velit, ac dignissim sem quam et est. Morbi egestas sit amet nibh eget ullamcorper. Vestibulum blandit convallis eros non ornare. Praesent sollicitudin pulvinar nunc, sit amet convallis erat iaculis in. Integer eu nunc felis.</p>
+						</div>
+						<img src="media/svg/step-card-curve.svg" alt="Curved graphical element" class="curved-svg">
+					</div>
+					<div class="step-card">
+						<div class="step-card-container">
+							<img src="media/svg/step-3-circle.svg" alt="Step 1 circle icon">
+							<div class="step-copy-wrapper">
+								<h3>Game the hell away to rack up stats & rewards.</h3>
+								<button class="step-link" onclick="stepThreeLinkIconSwap()">
+									<img src="media/svg/search.svg" alt="Magnifying glass icon">Find Games<img class="plus-icon" src="media/svg/plus.svg" alt="Plus to expand icon"><img class="minus-icon plus-icon" src="media/svg/minus.svg" alt="Minus to close icon">
+								</button>
+							</div>
+							<img src="media/svg/step-3-ill.svg" alt="Step 1 illustration">
+						</div>
+						<div class="step-card-expanded-container">
+							<!-- Add grid of game thumbnails as clickable links to those game's store page -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ornare ex, eu volutpat quam. Vestibulum pharetra, sapien et ultricies auctor, ligula odio varius velit, ac dignissim sem quam et est. Morbi egestas sit amet nibh eget ullamcorper. Vestibulum blandit convallis eros non ornare. Praesent sollicitudin pulvinar nunc, sit amet convallis erat iaculis in. Integer eu nunc felis.</p>
+						</div>
+						<img src="media/svg/step-card-curve.svg" alt="Curved graphical element" class="curved-svg">
+					</div>
+				</div>
+				<a href="#" class="btn">Get Started!</a>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 StatCrak. All rights reserved.</p>
+		</footer>
+	</div>
+	<script src="js/script.js" defer></script>
+</body>
+</html>
